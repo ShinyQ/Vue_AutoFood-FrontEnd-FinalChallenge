@@ -2,9 +2,8 @@
 <div>
     <navbar></navbar>
     <div style="margin-left:5%; margin-right:5%">
-        <h1><router-link style="color: #7bd9b1" class="fa fa-chevron-circle-left" :to="{name:'restaurant'}" >
-            <!-- <i style="color: #7bd9b1" class="fa fa-chevron-circle-left" aria-hidden="true"></i> -->
-            </router-link>
+        <h1>
+            <router-link style="color: #7bd9b1" class="fa fa-chevron-circle-left" :to="{name:'restaurant'}" ></router-link>
             Detail <font color="#62D2A2">Restaurant</font>
         </h1><br>
         
@@ -26,7 +25,8 @@ export default {
   data: function () {
         return {
             restaurants:[],
-            galleries:[]
+            galleries:[],
+            reviews:[]
         }
   }
 }

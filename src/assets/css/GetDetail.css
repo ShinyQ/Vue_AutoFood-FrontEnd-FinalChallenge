@@ -24,11 +24,19 @@
 }
 
 .green{
-    color:#28a745;
+    color:#1fab89;
+}
+
+.card-detail-padding{
+    padding: 2%!important;
+}
+
+.space-card{
+    margin-bottom:20px!important
 }
 
 a:hover{
-    color:#28a745!important;
+    color:#1fab89!important;
     text-decoration: none!important;
 }
 
