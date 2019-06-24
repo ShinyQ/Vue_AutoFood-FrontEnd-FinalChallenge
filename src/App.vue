@@ -7,7 +7,20 @@
     <router-view/>
   </div>
 </template>
+<script>
+  export default {
+    name: 'App',
+    computed:{
+      restaurants () {
+        return this.$store.state.getRestaurants.data.restaurants
+      }
+    }, 
+    mounted: function () {
+       this.$store.dispatch('getRestaurant/getRestaurants')
+    }
 
+  }
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
