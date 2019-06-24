@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-4 col-lg-3">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <router-link class="card" :to="{name:'detail',params:{id:item.restaurant.id}}" style="text-decoration: none; color: black; min-height:420px; margin-bottom:10%;">
+      <router-link class="card card-padding" :to="{name:'detail',params:{id:item.restaurant.id}}">
         <img class="img-div" :src="item.restaurant.featured_image" alt="Image Movies">
         <div class="body-padding">
           <h5><b><center>  {{ item.restaurant.name }}</center></b></h5>
