@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 Vue.use(Vuex)
 
+// Get Restaurants
 const moduleRestaurant = {
   namespaced: true,
   state: {
@@ -39,6 +40,7 @@ const moduleRestaurant = {
   }
 }
 
+// Detail Restaurants
 const moduleDetailRestaurant = {
   namespaced: true,
   state: {
@@ -54,7 +56,7 @@ const moduleDetailRestaurant = {
     }
   },
   actions: {
-    getRestaurants ({ commit }, id = '18875696') {
+    getRestaurants ({ commit }, id) {
       axios.get('https://developers.zomato.com/api/v2.1/restaurant?res_id=' + id + ' ', {
         headers: {
           'user-key': 'c22da83db9cd0b87037fc933cd7abf81'

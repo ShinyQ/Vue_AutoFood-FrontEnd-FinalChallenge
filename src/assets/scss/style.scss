@@ -1,0 +1,32 @@
+@import 'layout.scss';
+
+// navbar
+
+.navbar-brand{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.nav-item {
+    a {
+        font-family: $font-rubik;
+        font-weight: 900;
+        color: #B1B1B1;
+        font-size: 16px;
+        &:hover {
+            color: $color1 !important;
+        }
+    }
+    padding-right: 50px;
+}
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.active {
+    a {
+        color: $color1 !important;
+    }
+}
