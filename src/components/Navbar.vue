@@ -7,7 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home </a>
+                   <router-link class="nav-link" to="/">Home</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" to="/restaurant">List Rrestaurant</router-link>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#tentang">Tentang</a>

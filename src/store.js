@@ -20,7 +20,7 @@ const moduleRestaurant = {
   },
   actions: {
     getRestaurants ({ commit }) {
-      axios.get('https://developers.zomato.com/api/v2.1/search?q=jakarta&count=12&sort=rating', {
+      axios.get('https://developers.zomato.com/api/v2.1/search?q=italia&count=16', {
         headers: {
           'user-key': 'c22da83db9cd0b87037fc933cd7abf81'
         }
