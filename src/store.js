@@ -63,8 +63,45 @@ const moduleDetailRestaurant = {
         }
       })
         .then((response) => {
-          console.log(response.data)
+          // console.log(response.data.id)
           commit('setRestaurants', response.data)
+        }).catch(error => {
+          if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error'
+          } else {
+            this.errorStatus = error.response.data.message
+          }
+        })
+    }
+  }
+}
+
+// Restaurants Gallery
+const moduleGalleryRestaurant = {
+  namespaced: true,
+  state: {
+    data: {
+      galleries: [],
+      loading: true,
+      errored: false
+    }
+  },
+  mutations: {
+    setGalleries (state, payload) {
+      state.data.galleries = payload
+    }
+  },
+  actions: {
+    getGalleries ({ commit }, id) {
+      axios.get('https://developers.zomato.com/api/v2.1/restaurant?res_id=' + id + ' ', {
+        headers: {
+          'user-key': 'c22da83db9cd0b87037fc933cd7abf81'
+        }
+      })
+        .then((response) => {
+          console.log(response.data.photos)
+          commit('setGalleries', response.data.photos)
         }).catch(error => {
           if (!error.response) {
             // network error
@@ -80,6 +117,7 @@ const moduleDetailRestaurant = {
 export default new Vuex.Store({
   modules: {
     getRestaurant: moduleRestaurant,
-    detail: moduleDetailRestaurant
+    detail: moduleDetailRestaurant,
+    gallery: moduleGalleryRestaurant
   }
 })

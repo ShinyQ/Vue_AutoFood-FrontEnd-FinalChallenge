@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import '@/assets/scss/style.scss'
 import navbar from '@/components/Navbar'
 import restaurants from '@/components/api/GetRestaurant.vue'
 export default {

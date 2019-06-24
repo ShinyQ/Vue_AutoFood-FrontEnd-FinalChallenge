@@ -1,0 +1,40 @@
+.img-detail{
+    max-width: 100%!important;  
+    max-height: 350px;
+    min-height: 350px;
+    margin-bottom: 10px;
+    border-radius: 10px!important
+}
+
+.img-gallery{
+    position: relative;
+    max-width: 100%!important;  
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 100%!important;  
+    margin-bottom: 10px;
+    border-radius: 10px!important;
+    overflow: hidden; 
+    transition: transform .5s ease;
+}
+
+.img-gallery:hover {
+  transform: scale(1.5);
+  z-index:100;
+}
+
+.green{
+    color:#28a745;
+}
+
+a:hover{
+    color:#28a745!important;
+    text-decoration: none!important;
+}
+
+h6{
+    margin-bottom: 20px!important;
+    font-weight: none!important;
+    font-size: 16px!important;
+    color: #777777
+}
