@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+body {
+  overflow-x: hidden;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a .router-link-exact-active {
+  color: #42b983;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.navbar .btn {
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  margin-top: -4px !important;
+}
+
+.bg-putih {
+  background-color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #B1B1B1 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1FAB89 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #1FAB89 !important;
+}
+
+/* CONTAINER */
+.container-home, .container-nav, .container-footer {
+  max-width: 90% !important;
+}
+
+/* CUSTOM BUTTON */
+.btn {
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-size: 15px !important;
+  margin-top: 40px;
+}
+
+.btn-main {
+  color: #4D4D4D;
+  background-color: transparent;
+  border: 2px #4D4D4D solid !important;
+}
+
+.btn-main:hover {
+  color: #1FAB89;
+  background-color: transparent;
+  border: 2px #1FAB89 solid !important;
+}

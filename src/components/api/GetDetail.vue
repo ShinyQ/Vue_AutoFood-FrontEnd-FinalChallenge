@@ -31,7 +31,7 @@
             <h2>Review <font color="#62D2A2">Restaurant</font></h2><br>
             <div class="row">      
                     <div class="card card-detail-padding col-md-12 space-card" v-for="(item, index) in reviews" :key="index" :item="item">
-                        <p>{{ item.review.review_text }}</p>
+                        <p>{{ item.review.review_text.substring(0,1000) }}..</p>
                     </div>           
             </div>
         </div>
