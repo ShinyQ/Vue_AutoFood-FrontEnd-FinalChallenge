@@ -65,7 +65,7 @@ body {
 
 /* CONTAINER */
 .container-landing, .container-nav, .container-footer {
-  max-width: 90% !important;
+  max-width: 80% !important;
 }
 
 .container-landing {
@@ -84,8 +84,50 @@ body {
   text-transform: uppercase;
 }
 
+.container-about h4 {
+  color: #8D8D8D;
+}
+
+.container-about .autofood-p {
+  color: #4F4F4F;
+}
+
+.container-about .btn {
+  text-transform: uppercase;
+}
+
+.container-about .col-about h1 {
+  float: left;
+  color: #000;
+}
+
+.container-about .col-about {
+  float: left;
+  margin-left: 40px;
+}
+
+.container-about .row-icon {
+  margin-top: 100px;
+}
+
+.container-about .row-icon h4 {
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-size: 22px !important;
+  line-height: 26px;
+  text-align: right;
+  color: #333;
+}
+
+.container-about .row-icon img {
+  float: right;
+  margin-left: 30px;
+}
+
 /* GLOBAL FONTS */
-.landing-h1 {
+.custom-h1 {
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
@@ -93,7 +135,7 @@ body {
   line-height: 60px;
 }
 
-.landing-h1-2 {
+.custom-h1-2 {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
@@ -105,7 +147,7 @@ body {
   margin: 12% 15% 0 0;
 }
 
-.landing-h2 {
+.custom-h2 {
   font-family: "Rubik" !important;
   font-style: normal !important;
   font-weight: 500 !important;
@@ -113,11 +155,11 @@ body {
   font-size: 40px !important;
 }
 
-.landing-h2 span {
+.custom-h2 span {
   font-size: 20px;
 }
 
-.landing-p {
+.custom-p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
@@ -127,7 +169,7 @@ body {
   margin-top: 50px;
 }
 
-.ijo {
+.green {
   color: #1FAB89;
   font-weight: bold;
 }
@@ -155,13 +197,25 @@ body {
 }
 
 .btn-landing {
-  color: #fff;
-  background-color: #1FAB89;
+  color: #fff!important;
+  background-color: #1FAB89!important;
   border: 2px #1FAB89 solid !important;
 }
 
 .btn-landing:hover {
-  color: #1FAB89;
-  background-color: transparent;
+  color: #1FAB89!important;
+  background-color: transparent!important;
+  border: 2px #1FAB89 solid !important;
+}
+
+.btn-about {
+  color: #1FAB89!important;
+  background-color: #fff!important;
+  border: 2px #1FAB89 solid !important;
+}
+
+.btn-about:hover {
+  color: #fff !important;
+  background-color: #1FAB89!important;
   border: 2px #1FAB89 solid !important;
 }

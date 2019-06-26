@@ -1,128 +1,216 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+$color_1: #2c3e50;
+$color_2: #42b983;
+$color_3: #B1B1B1;
+$color_4: #1FAB89;
+$color_5: #8D8D8D;
+$color_6: #4F4F4F;
+$color_7: #000;
+$color_8: #333;
+$color_9: #171717;
+$color_10: #4D4D4D;
+$color_11: #fff;
+$font_family_1: 'Avenir', Helvetica, Arial, sans-serif;
+$font_family_2: "Rubik";
+$font_family_3: Rubik;
+$font_family_4: Karla;
+$background_color_1: #fff;
+$background_color_2: transparent;
+$background_color_3: #1FAB89;
 
-@mixin font-rubik {
-	font-family: 'Rubik'!important;
-	font-style: normal!important;
-	font-weight: 500!important;
-	font-size: 16px!important;
-}
-
-@mixin img-center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@mixin font-karla {
-	font-family: Karla;
-	font-style: normal;
-}
-
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900";
+@import "https://fonts.googleapis.com/css?family=Karla:400,700";
+/* NAVBAR */
+/* CONTAINER */
+/* GLOBAL FONTS */
+/* CUSTOM BUTTON */
 body {
 	overflow-x: hidden;
 }
-
 #app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	font-family: $font_family_1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: #2c3e50;
+	color: $color_1;
 }
-
 #nav {
 	padding: 30px;
-
 	a {
 		font-weight: bold;
-		color: #2c3e50;
-
+		color: $color_1;
 		.router-link-exact-active {
-			color: #42b983;
+			color: $color_2;
 		}
 	}
 }
-
-/* NAVBAR */
 .navbar {
-	@include font-rubik;
-	line-height: 19px!important;
-	padding-top: 20px!important;
-	padding-bottom: 20px!important;
-
+	font-family: $font_family_2 !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 16px !important;
+	line-height: 19px !important;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
 	.btn {
-		@include font-rubik;
-		margin-top: -4px!important;
+		font-family: $font_family_2 !important;
+		font-style: normal !important;
+		font-weight: 500 !important;
+		font-size: 16px !important;
+		margin-top: -4px !important;
 	}
 }
-
 .bg-putih {
-	background-color: #fff!important;
+	background-color: $background_color_1 !important;
 }
-
 .navbar-light {
 	.navbar-nav {
 		.nav-item {
 			margin-left: 20px;
 		}
 		.nav-link {
-			color: #B1B1B1!important;
-
+			color: $color_3 !important;
 			&:hover {
-				color: #1FAB89!important;
+				color: $color_4 !important;
 			}
 		}
-		.active>.nav-link {
-			color: #1FAB89!important;
+		.active {
+			>.nav-link {
+				color: $color_4 !important;
+			}
 		}
 	}
 }
-
-/* CONTAINER */
-.container-landing, .container-nav, .container-footer {
-	max-width: 90%!important;
-}
-
 .container-landing {
+	max-width: 80% !important;
 	margin-top: calc(5% + 88px);
 	margin-bottom: 10%;
-
 	.h1-bg {
+		background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(166, 64, 247, 0.3)), color-stop(40%, transparent));
+		background: -webkit-linear-gradient(bottom, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
+		background: -o-linear-gradient(bottom, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
 		background: linear-gradient(to top, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
 	}
-
 	.btn {
 		text-transform: uppercase;
 	}
 }
-
-/* CUSTOM BUTTON */
-.btn {
-	@include font-rubik;
-	font-size: 15px!important;
-	margin-top: 40px;
+.container-nav {
+	max-width: 80% !important;
 }
-
-.btn-main {
-	color: #4D4D4D;
-	background-color: transparent;
-	border: 2px #4D4D4D solid!important;
-
-	&:hover {
-		color: #1FAB89;
-		background-color: transparent;
-		border: 2px #1FAB89 solid!important;
+.container-footer {
+	max-width: 80% !important;
+}
+.container-about {
+	h4 {
+		color: $color_5;
+	}
+	.autofood-p {
+		color: $color_6;
+	}
+	.btn {
+		text-transform: uppercase;
+	}
+	.col-about {
+		h1 {
+			float: left;
+			color: $color_7;
+		}
+		float: left;
+		margin-left: 40px;
+	}
+	.row-icon {
+		margin-top: 100px;
+		h4 {
+			font-family: $font_family_2 !important;
+			font-style: normal !important;
+			font-weight: 500 !important;
+			font-size: 16px !important;
+			font-size: 22px !important;
+			line-height: 26px;
+			text-align: right;
+			color: $color_8;
+		}
+		img {
+			float: right;
+			margin-left: 30px;
+		}
 	}
 }
-
-.btn-landing {
-	color: #fff;
-	background-color: #1FAB89;
-	border: 2px #1FAB89 solid!important;
-
+.custom-h1 {
+	font-family: $font_family_3;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+}
+.custom-h1-2 {
+	font-family: $font_family_4;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 52px;
+	line-height: 61px;
+	text-align: center;
+	color: $color_3;
+	float: right;
+	margin: 12% 15% 0 0;
+}
+.custom-h2 {
+	font-family: $font_family_2 !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 16px !important;
+	font-size: 40px !important;
+	span {
+		font-size: 20px;
+	}
+}
+.custom-p {
+	font-family: $font_family_4;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	color: $color_9;
+	margin-top: 50px;
+}
+.green {
+	color: $color_4;
+	font-weight: bold;
+}
+.btn {
+	font-family: $font_family_2 !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 16px !important;
+	font-size: 15px !important;
+	margin-top: 40px;
+}
+.btn-main {
+	color: $color_10;
+	background-color: $background_color_2;
+	border: 2px #4D4D4D solid !important;
 	&:hover {
-		color: #1FAB89;
-		background-color: transparent;
-		border: 2px #1FAB89 solid!important;
+		color: $color_4;
+		background-color: $background_color_2;
+		border: 2px #1FAB89 solid !important;
+	}
+}
+.btn-landing {
+	color: $color_11 !important;
+	background-color: $background_color_3 !important;
+	border: 2px #1FAB89 solid !important;
+	&:hover {
+		color: $color_4 !important;
+		background-color: $background_color_2 !important;
+		border: 2px #1FAB89 solid !important;
+	}
+}
+.btn-about {
+	color: $color_4 !important;
+	background-color: $background_color_1 !important;
+	border: 2px #1FAB89 solid !important;
+	&:hover {
+		color: $color_11 !important;
+		background-color: $background_color_3 !important;
+		border: 2px #1FAB89 solid !important;
 	}
 }
