@@ -5,7 +5,7 @@
 					<div class="col-md-4">
 						<div class="container-solution-child-1">
 							<img class="img-lay-1" src="@/assets/img/Logo.png">
-							<h1 class="custom-h1">
+							<h1>
 								<span class="custom-h1">&nbsp;Kami <br>&nbsp;menawarkan <br>&nbsp;solusi. </span>
 							</h1>
 							<div class="pemesanan">

@@ -64,7 +64,7 @@ body {
 }
 
 /* CONTAINER */
-.container-landing, .container-nav, .container-footer {
+.container-landing, .container-nav {
   max-width: 80% !important;
 }
 
@@ -152,7 +152,7 @@ body {
   margin-left: -120px;
 }
 
-.container-solution .row .col-md-4 .container-solution-child-1 .half-h1 {
+.container-solution .row .col-md-4 .container-solution-child-1 .custom-h1 {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #9DF3C4), color-stop(40%, transparent));
   background: -webkit-linear-gradient(bottom, #9DF3C4 40%, transparent 40%);
   background: -o-linear-gradient(bottom, #9DF3C4 40%, transparent 40%);
@@ -235,6 +235,129 @@ body {
 .container-solution .row .col-md-8 .container .custom-card:hover h1 {
   color: #1FAB89;
 }
+
+.container-footer {
+  max-width: 90% !important;
+}
+
+.container-app {
+  background: url(../img/bg-app2.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 743px;
+  padding-top: 14vh;
+}
+
+.container-app .container .custom-app {
+  width: 80%;
+  padding: 95px 0 70px 0;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
+.container-app .container .custom-app p {
+  margin: 25px 0 75px 0;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.container-app .container .custom-app button {
+  margin: 15px;
+}
+
+.container-app .container .custom-app .btn-forth {
+  background-color: #A640F7;
+  border: 2px #A640F7 solid;
+  color: #FFFFFF;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+.container-app .container .custom-app .btn-forth span {
+  margin-right: 15px;
+}
+
+.container-app .container .custom-app .btn-forth:hover {
+  color: #A640F7;
+  background-color: transparent;
+  border: 2px #A640F7 solid;
+}
+
+footer {
+  background-color: #F7F7F7;
+}
+
+footer .container-footer {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+footer .container-footer h4 {
+  color: #4D4D4D;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+footer .container-footer p {
+  color: #B1B1B1;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+footer .container-footer input[type=email] {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../img/@.png");
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 14px 20px 12px 50px;
+  border: 2px solid #cecece;
+  border-radius: 6px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4D4D4D;
+}
+
+footer .container-footer button {
+  margin-top: 10px;
+}
+
+footer .container-footer ::-webkit-input-placeholder {
+  color: #CECECE;
+}
+
+footer .container-footer :-ms-input-placeholder {
+  color: #CECECE;
+}
+
+footer .container-footer ::-ms-input-placeholder {
+  color: #CECECE;
+}
+
 
 /* GLOBAL FONTS */
 .custom-h1 {
