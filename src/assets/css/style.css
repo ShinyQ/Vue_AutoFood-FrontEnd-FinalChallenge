@@ -64,8 +64,72 @@ body {
 }
 
 /* CONTAINER */
-.container-home, .container-nav, .container-footer {
+.container-landing, .container-nav, .container-footer {
   max-width: 90% !important;
+}
+
+.container-landing {
+  margin-top: calc(5% + 88px);
+  margin-bottom: 10%;
+}
+
+.container-landing .h1-bg {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(166, 64, 247, 0.3)), color-stop(40%, transparent));
+  background: -webkit-linear-gradient(bottom, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
+  background: -o-linear-gradient(bottom, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
+  background: linear-gradient(to top, rgba(166, 64, 247, 0.3) 40%, transparent 40%);
+}
+
+.container-landing .btn {
+  text-transform: uppercase;
+}
+
+/* GLOBAL FONTS */
+.landing-h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.landing-h1-2 {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+  color: #B1B1B1;
+  float: right;
+  margin: 12% 15% 0 0;
+}
+
+.landing-h2 {
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-size: 40px !important;
+}
+
+.landing-h2 span {
+  font-size: 20px;
+}
+
+.landing-p {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #171717;
+  margin-top: 50px;
+}
+
+.ijo {
+  color: #1FAB89;
+  font-weight: bold;
 }
 
 /* CUSTOM BUTTON */
@@ -85,6 +149,18 @@ body {
 }
 
 .btn-main:hover {
+  color: #1FAB89;
+  background-color: transparent;
+  border: 2px #1FAB89 solid !important;
+}
+
+.btn-landing {
+  color: #fff;
+  background-color: #1FAB89;
+  border: 2px #1FAB89 solid !important;
+}
+
+.btn-landing:hover {
   color: #1FAB89;
   background-color: transparent;
   border: 2px #1FAB89 solid !important;
