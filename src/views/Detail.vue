@@ -1,7 +1,7 @@
 <template>
 <div>
     <navbar></navbar>
-    <div style="margin-left:5%; margin-right:5%">
+    <div style="margin-top: 8%; margin-left:5%; margin-right:5%">
         <h1>
             <router-link style="color: #7bd9b1" class="fa fa-chevron-circle-left" :to="{name:'restaurant'}" ></router-link>
             Detail <font color="#62D2A2">Restaurant</font>

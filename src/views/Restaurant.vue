@@ -1,7 +1,7 @@
 <template>
 <div>
     <navbar></navbar>
-    <div style="margin-left:5%; margin-right:5%">
+    <div style="margin-top: 8%; margin-left:5%; margin-right:5%">
         <h1>List <font color="#62D2A2">Restaurant</font></h1><br>
         <div class="row">
         <restaurants v-for="(item, index) in restaurants"  :key="index" :item="item"></restaurants>

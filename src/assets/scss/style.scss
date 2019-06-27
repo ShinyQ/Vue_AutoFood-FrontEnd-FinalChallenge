@@ -7,16 +7,22 @@ $color_6: #4F4F4F;
 $color_7: #000;
 $color_8: #333;
 $color_9: #171717;
-$color_10: #4D4D4D;
-$color_11: #fff;
+$color_10: #FFFFFF;
+$color_11: white;
+$color_12: #A640F7;
+$color_13: #4D4D4D;
+$color_14: #CECECE;
+$color_15: #fff;
 $font_family_1: 'Avenir', Helvetica, Arial, sans-serif;
 $font_family_2: "Rubik";
 $font_family_3: Rubik;
 $font_family_4: Karla;
 $background_color_1: #fff;
 $background_color_2: #F7F7F7;
-$background_color_3: transparent;
-$background_color_4: #1FAB89;
+$background_color_3: #A640F7;
+$background_color_4: transparent;
+$background_color_5: white;
+$background_color_6: #1FAB89;
 
 @import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900";
 @import "https://fonts.googleapis.com/css?family=Karla:400,700";
@@ -100,9 +106,6 @@ body {
 .container-nav {
 	max-width: 80% !important;
 }
-.container-footer {
-	max-width: 80% !important;
-}
 .container-about {
 	h4 {
 		color: $color_5;
@@ -154,7 +157,7 @@ body {
 					margin-top: 30px;
 					margin-left: -120px;
 				}
-				.half-h1 {
+				.custom-h1 {
 					background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #9DF3C4), color-stop(40%, transparent));
 					background: -webkit-linear-gradient(bottom, #9DF3C4 40%, transparent 40%);
 					background: -o-linear-gradient(bottom, #9DF3C4 40%, transparent 40%);
@@ -238,6 +241,114 @@ body {
 		}
 	}
 }
+.container-footer {
+	max-width: 90% !important;
+}
+.container-app {
+	background: url(../img/bg-app2.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 743px;
+	padding-top: 14vh;
+	.container {
+		.custom-app {
+			width: 80%;
+			padding: 95px 0 70px 0;
+			background-color: $background_color_1;
+			border-radius: 12px;
+			text-align: center;
+			-webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+			box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+			p {
+				margin: 25px 0 75px 0;
+				font-family: $font_family_4;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 32px;
+			}
+			button {
+				margin: 15px;
+			}
+			.btn-footer {
+				background-color: $background_color_3;
+				border: 2px #A640F7 solid;
+				color: $color_10;
+				font-family: $font_family_2 !important;
+				font-style: normal !important;
+				font-weight: 500 !important;
+				font-size: 16px !important;
+				span {
+					margin-right: 15px !important;
+					color: $color_11 !important;
+				}
+				&:hover {
+					color: $color_12;
+					background-color: $background_color_4;
+					border: 2px #A640F7 solid;
+				}
+			}
+		}
+	}
+}
+footer {
+	background-color: $background_color_2;
+	.container-footer {
+		padding-top: 70px;
+		padding-bottom: 90px;
+		h4 {
+			color: $color_13;
+			font-family: $font_family_3;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 26px;
+			margin-bottom: 50px;
+			padding-top: 10px;
+		}
+		p {
+			color: $color_3;
+			font-family: $font_family_4;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 21px;
+		}
+		input[type=email] {
+			width: 80%;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			font-size: 16px;
+			background-color: $background_color_5;
+			background-image: url("../img/@.png");
+			background-position: 15px 15px;
+			background-repeat: no-repeat;
+			padding: 14px 20px 12px 50px;
+			border: 2px solid #cecece;
+			border-radius: 6px;
+			font-family: $font_family_4;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 21px;
+			color: $color_13;
+		}
+		button {
+			margin-top: 10px;
+		}
+		&::-webkit-input-placeholder {
+			color: $color_14;
+		}
+		&:-ms-input-placeholder {
+			color: $color_14;
+		}
+		&::-ms-input-placeholder {
+			color: $color_14;
+		}
+	}
+}
 .custom-h1 {
 	font-family: $font_family_3;
 	font-style: normal;
@@ -288,22 +399,22 @@ body {
 	margin-top: 40px;
 }
 .btn-main {
-	color: $color_10;
-	background-color: $background_color_3;
+	color: $color_13;
+	background-color: $background_color_4;
 	border: 2px #4D4D4D solid !important;
 	&:hover {
 		color: $color_4;
-		background-color: $background_color_3;
+		background-color: $background_color_4;
 		border: 2px #1FAB89 solid !important;
 	}
 }
 .btn-landing {
-	color: $color_11 !important;
-	background-color: $background_color_4 !important;
+	color: $color_15 !important;
+	background-color: $background_color_6 !important;
 	border: 2px #1FAB89 solid !important;
 	&:hover {
 		color: $color_4 !important;
-		background-color: $background_color_3 !important;
+		background-color: $background_color_4 !important;
 		border: 2px #1FAB89 solid !important;
 	}
 }
@@ -312,8 +423,8 @@ body {
 	background-color: $background_color_1 !important;
 	border: 2px #1FAB89 solid !important;
 	&:hover {
-		color: $color_11 !important;
-		background-color: $background_color_4 !important;
+		color: $color_15 !important;
+		background-color: $background_color_6 !important;
 		border: 2px #1FAB89 solid !important;
 	}
 }

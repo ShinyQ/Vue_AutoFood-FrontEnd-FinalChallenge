@@ -273,7 +273,7 @@ body {
   margin: 15px;
 }
 
-.container-app .container .custom-app .btn-forth {
+.container-app .container .custom-app .btn-footer {
   background-color: #A640F7;
   border: 2px #A640F7 solid;
   color: #FFFFFF;
@@ -283,11 +283,12 @@ body {
   font-size: 16px !important;
 }
 
-.container-app .container .custom-app .btn-forth span {
-  margin-right: 15px;
+.container-app .container .custom-app .btn-footer span {
+  margin-right: 15px!important;
+  color: white!important
 }
 
-.container-app .container .custom-app .btn-forth:hover {
+.container-app .container .custom-app .btn-footer:hover {
   color: #A640F7;
   background-color: transparent;
   border: 2px #A640F7 solid;

@@ -1,5 +1,6 @@
 <template>
     <div>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<div class="container-app">
             <div class="container">
                 <center>
@@ -8,8 +9,8 @@
                         <p>
                             Unduh dan pasang aplikasi Autofood di handphone anda sekarang juga.<br>Tersedia pada iOS dan Android.
                         </p>
-                        <button class="btn btn-lg btn-forth"><span class="fab fa-app-store-ios"></span>IOS App store</button>
-                        <button class="btn btn-lg btn-forth"><span class="fab fa-google-play"></span>Google Play</button>
+                        <button class="btn btn-lg btn-footer"><span class="fab fa-globe"></span>IOS App store</button>
+                        <button class="btn btn-lg btn-footer"><span class="fab fa-google"></span>Google Play</button>
                     </div>
                 </center>
             </div>
