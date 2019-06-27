@@ -10,13 +10,13 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<router-link :to="'/'" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
+						<router-link :to="'/#home'" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
 					</li>
 					<li class="nav-item">
-						<a href="#about" class="nav-link">Tentang</a>
+						<a href="/#about" class="nav-link">Tentang</a>
 					</li>
 					<li class="nav-item">
-						<a href="#layanan" class="nav-link">Layanan</a>
+						<a href="/#layanan" class="nav-link">Layanan</a>
 					</li>
 					<li class="nav-item">
 						<router-link :to="'/restaurant'" class="btn btn-lg btn-main">Mulai di sini</router-link>

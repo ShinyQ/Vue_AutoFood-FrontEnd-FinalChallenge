@@ -285,11 +285,15 @@ body {
 
 .container-app .container .custom-app .btn-footer span {
   margin-right: 15px!important;
-  color: white!important
+  color: white
 }
 
 .container-app .container .custom-app .btn-footer:hover {
-  color: #A640F7;
+  color: #A640F7!important;
+}
+
+.container-app .container .custom-app .btn-footer:hover{
+  color: #A640F7!important;
   background-color: transparent;
   border: 2px #A640F7 solid;
 }
@@ -425,7 +429,7 @@ footer .container-footer ::-ms-input-placeholder {
 }
 
 .btn-main:hover {
-  color: #1FAB89;
+  color: #1FAB89!important;
   background-color: transparent;
   border: 2px #1FAB89 solid !important;
 }

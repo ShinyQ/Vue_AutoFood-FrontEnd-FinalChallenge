@@ -7,7 +7,7 @@ import './registerServiceWorker'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NProgress from 'nprogress'
-
+import 'jquery'
 import '../node_modules/nprogress/nprogress.css'
 Vue.config.productionTip = false
 

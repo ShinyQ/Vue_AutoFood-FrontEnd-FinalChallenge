@@ -28,14 +28,14 @@
             </div>
         </div>
 
-        <div style="margin-top:4%; margin-bottom: 10%">
+        <div style="margin-top:4%; margin-bottom: 5%">
             <h2>Review <font color="#62D2A2">Restaurant</font></h2><br>
             <div class="row">      
 				<div class="card card-detail-padding space-card" v-for="(item, index) in reviews" :key="index" :item="item">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-md-2">
-								<img class="rounded" :src="item.review.user.profile_image" style="display:block; margin-left: auto; margin-right: auto;" />
+								<img class="rounded-circle" :src="item.review.user.profile_image" style="display:block; margin-left: auto; margin-right: auto; max-width: 120px" />
 								<p class="text-secondary text-center menit-komen">{{ item.review.review_time_friendly }}</p>
 							</div>
 							<div class="col-md-10 customer">

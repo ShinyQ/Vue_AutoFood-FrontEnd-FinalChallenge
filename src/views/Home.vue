@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 import navbar from '@/components/Navbar'
 import landing from '@/components/Landing'
 import about from '@/components/About'

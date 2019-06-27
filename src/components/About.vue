@@ -1,5 +1,6 @@
 <template>
-	<div id="about">
+	<div>
+		<div id="about"></div>
 		<div class="container container-about">
 			<div class="row">
 				<div class="col-md-7">
@@ -11,7 +12,7 @@
 						<p class="custom-p">
 							Adalah aplikasi untuk memudahkan kebutuhan sehari hari terutama dalam masalah makanan. Kini anda tak perlu lagi datang langsung ke tempat untuk memesan makanan. Anda hanya perlu menggunakan custom dan masalah Auto-selesai.
 						</p>
-						<button class="btn btn-lg btn-about">layanan kami</button>
+						<a href="#layanan" class="btn btn-lg btn-about">layanan kami</a>
 					</div>
 				</div>
 				<div class="row row-icon">

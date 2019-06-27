@@ -1,7 +1,7 @@
 <template>
 	<div id="home">
 		<div class="container container-landing">
-			<div class="row">
+			<div class="row" >
 				<div class="col-md-4">
 					<h1 class="custom-h1"><span class="h1-bg">&nbsp;Why bother <br>&nbsp;when you can <br>&nbsp;order? </span></h1>
 					<p class="custom-p">
