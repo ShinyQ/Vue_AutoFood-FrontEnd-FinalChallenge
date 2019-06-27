@@ -1,6 +1,7 @@
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    text-decoration: none
+    text-decoration: none;
+    color: #1fab89!important;
 }
 
 .img-div{
@@ -12,6 +13,10 @@
 
 .body-padding{
     padding: 3%
+}
+
+.body-padding h5{
+    margin-top: 15px
 }
 
 .card-padding{

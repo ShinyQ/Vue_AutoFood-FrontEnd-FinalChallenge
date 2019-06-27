@@ -9,8 +9,8 @@
                         <p>
                             Unduh dan pasang aplikasi Autofood di handphone anda sekarang juga.<br>Tersedia pada iOS dan Android.
                         </p>
-                        <button class="btn btn-lg btn-footer"><span class="fab fa-globe"></span>IOS App store</button>
-                        <button class="btn btn-lg btn-footer"><span class="fab fa-google"></span>Google Play</button>
+                        <button class="btn btn-lg btn-footer"><span class="fa fa-globe"></span>IOS App store</button>
+                        <button class="btn btn-lg btn-footer"><span class="fa fa-google"></span>Google Play</button>
                     </div>
                 </center>
             </div>
