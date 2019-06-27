@@ -13,7 +13,7 @@ npm install
  - VueJS
  - Axios
  - Vuex
- - API Zomato : [link](https://developers.zomato.com/api/v2.1/search?entity_id=74&entity_type=city&sort=rating)
+ - API Zomato : [link](https://developers.zomato.com/api/v2.1/search?q=italia&count=16)
 ```
 
 ## First Commit
